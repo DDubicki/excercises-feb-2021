@@ -7,7 +7,7 @@ import static java.lang.Thread.sleep;
 public class Multithreading {
 
     static int counter;
-    static boolean free = true;
+    static Boolean free = true;
 
     public static void main(String[] args) throws InterruptedException {
 
