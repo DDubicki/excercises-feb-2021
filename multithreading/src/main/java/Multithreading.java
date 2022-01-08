@@ -1,3 +1,5 @@
+import static java.lang.Thread.sleep;
+
 public class Multithreading {
 
     private static int counter = 0;
@@ -6,8 +8,15 @@ public class Multithreading {
 
 
         Runnable runnable = () -> {
-            for (int i = 0; i < 100000; i++) {
-                counter++;
+            for (int i = 0; i < 1000; i++) {
+                int newCounter = counter;
+                newCounter += 1;
+                try {
+                    Thread.sleep(1);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                counter = newCounter;
             }
         };
 
