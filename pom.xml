@@ -8,6 +8,7 @@
     <name>excercises-feb-2021</name>
     <modules>
         <module>multithreading</module>
+        <module>spring-demo</module>
     </modules>
     <properties>
         <maven.compiler.target>17</maven.compiler.target>
