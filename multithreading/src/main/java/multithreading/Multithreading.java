@@ -1,13 +1,6 @@
 package multithreading;
 
-import multithreading.CounterIncrementor;
-
-import static java.lang.Thread.sleep;
-
 public class Multithreading {
-
-    static int counter;
-    static Boolean free = true;
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -25,6 +18,6 @@ public class Multithreading {
         thread2.join();
         thread3.join();
 
-        System.out.println(counter);
+        System.out.println(CounterIncrementor.counter);
     }
 }

@@ -1,8 +1,11 @@
 package multithreading;
-import static multithreading.Multithreading.*;
+
+import java.util.Objects;
 
 public class CounterIncrementor implements Runnable {
 
+  static int counter;
+  static Object free = new Object();
 
   @Override
   public void run() {
